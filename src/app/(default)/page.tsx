@@ -1,5 +1,6 @@
 import About from '@/components/About'
 import Hero from '@/components/Hero'
+import Services from '@/components/Services'
 import Testimonials from '@/components/Testimonials'
 
 export const metadata = {
@@ -15,6 +16,8 @@ export default function Home() {
       <About />
 
       <Testimonials />
+
+      <Services />
     </div>
   )
 }
