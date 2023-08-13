@@ -4,8 +4,9 @@ import Services from '@/components/Services'
 import Testimonials from '@/components/Testimonials'
 
 export const metadata = {
-  title: 'Home - Simple',
-  description: 'Page description',
+  title: 'OtimizaMedia - Início',
+  description:
+    'Otimizacao de sites e aplicativos para mecanismos de busca (SEO) e redes sociais (SMM).',
 }
 
 export default function Home() {
