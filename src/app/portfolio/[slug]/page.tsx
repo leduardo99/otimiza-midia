@@ -1,21 +1,21 @@
-import type { Metadata } from 'next';
+import type { Metadata } from 'next'
 
-import { Main } from '@/templates/Main';
+import { Main } from '@/templates/Main'
 
 type IPortfolioDetailProps = {
-  params: { slug: string };
-};
+  params: { slug: string }
+}
 
 export async function generateStaticParams() {
   return Array.from(Array(6).keys()).map((elt) => ({
     slug: `${elt}`,
-  }));
+  }))
 }
 
 export function generateMetadata(props: IPortfolioDetailProps): Metadata {
   return {
     title: `Porfolio ${props.params.slug}`,
-  };
+  }
 }
 
 const PortfolioDetail = (props: IPortfolioDetailProps) => (
@@ -31,8 +31,8 @@ const PortfolioDetail = (props: IPortfolioDetailProps) => (
       brand visibility.
     </p>
   </Main>
-);
+)
 
-export const dynamicParams = false;
+export const dynamicParams = false
 
-export default PortfolioDetail;
+export default PortfolioDetail

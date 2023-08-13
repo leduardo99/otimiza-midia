@@ -1,21 +1,53 @@
 @tailwind base;
 
-a {
-  @apply text-blue-700;
-}
-
-a:hover {
-  @apply border-b-2 border-blue-700;
-}
-
 @tailwind components;
 
 @tailwind utilities;
 
-.content p {
-  @apply my-6;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 
-.content ul {
-  @apply my-6;
+/* Typography */
+.h1 {
+    @apply text-4xl font-extrabold leading-tight tracking-tighter;
+}
+
+.h2 {
+    @apply text-3xl font-extrabold leading-tight tracking-tighter;
+}
+
+.h3 {
+    @apply text-3xl font-bold leading-tight;
+}
+
+.h4 {
+    @apply text-2xl font-bold leading-snug tracking-tight;
+}
+
+@screen md {
+    .h1 {
+        @apply text-5xl;
+    }
+
+    .h2 {
+        @apply text-4xl;
+    }
+}
+
+/* Buttons */
+.btn,
+.btn-sm {
+    @apply font-medium inline-flex items-center justify-center border border-transparent rounded-sm leading-snug transition duration-150 ease-in-out;
+}
+
+.btn {
+    @apply px-8 py-3;
+}
+
+.btn-sm {
+    @apply px-4 py-2;
 }

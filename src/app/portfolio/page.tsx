@@ -1,12 +1,13 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
 
-import { Main } from '@/templates/Main';
+import { Main } from '@/templates/Main'
 
 export const metadata: Metadata = {
   title: 'Portfolio',
   description: 'Welcome to my portfolio page!',
-};
+}
 
 const Portfolio = () => (
   <Main>
@@ -21,10 +22,11 @@ const Portfolio = () => (
       {Array.from(Array(6).keys()).map((elt) => (
         <Link className="border-none" key={elt} href={`/portfolio/${elt}`}>
           <div className="overflow-hidden rounded-lg">
-            <img
+            <Image
               className="h-full w-full object-cover object-center"
               src="/assets/images/nextjs-starter-banner.png"
               alt="Portfolio project"
+              fill
             />
 
             <div className="bg-blue-200 p-3 text-xl font-bold">
@@ -35,6 +37,6 @@ const Portfolio = () => (
       ))}
     </div>
   </Main>
-);
+)
 
-export default Portfolio;
+export default Portfolio

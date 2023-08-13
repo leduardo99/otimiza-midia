@@ -1,13 +1,13 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
+import type { Metadata } from 'next'
+import Link from 'next/link'
 
-import { Main } from '@/templates/Main';
+import { Main } from '@/templates/Main'
 
 export const metadata: Metadata = {
   title: 'New Router',
   description:
     'Incrementally migrate your existing application from pages to app',
-};
+}
 
 const NewRouter = () => (
   <Main>
@@ -25,6 +25,6 @@ const NewRouter = () => (
       .
     </p>
   </Main>
-);
+)
 
-export default NewRouter;
+export default NewRouter
