@@ -1,13 +1,19 @@
+import Image from 'next/image'
+
 export default function Services() {
   return (
-    <section className="text-gray-800">
-      <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
-        <div>
-          <h2 className="text-3xl font-bold tracki text-center sm:text-5xl text-gray-800">
+    <section
+      id="services"
+      className="flex w-full flex-col items-center justify-center relative"
+    >
+      <div className="container max-w-xl mt-4 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
+        <div className="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2">
+          <h2 className="text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl">
             Nossos serviços
           </h2>
-          <p className="max-w-3xl mx-auto mt-4 text-xl text-center text-gray-600">
-            Quando cetero his ne, eum admodum sapientem ut.
+          <p className="text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl">
+            Trabalhamos em todos os seguimentos do Marketing Digital, desde o
+            desenvolvimento de sites até o impulsionamento das redes sociais.
           </p>
         </div>
         <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
@@ -16,9 +22,9 @@ export default function Services() {
               Desenvolvimento de sites
             </h3>
             <p className="mt-3 text-lg text-gray-600">
-              Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos
-              etiam regione ut, persius eripuit quo id. Sit te euismod
-              tacimates.
+              Contamos com competentes desenvolvedores, além de designers UX,
+              que estão dispostos a criar uma identidade visual única,
+              responsiva e de fácil acesso.
             </p>
             <div className="mt-12 space-y-12">
               <div className="flex">
@@ -84,10 +90,12 @@ export default function Services() {
             </div>
           </div>
           <div aria-hidden="true" className="mt-10 lg:mt-0">
-            <img
+            <Image
               src="/assets/images/developer.svg"
               alt="developer"
               className="mx-auto"
+              width={480}
+              height={360}
             />
           </div>
         </div>
@@ -196,10 +204,12 @@ export default function Services() {
               </div>
             </div>
             <div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
-              <img
+              <Image
                 src="/assets/images/social.svg"
                 alt="social"
                 className="mx-auto"
+                width={480}
+                height={360}
               />
             </div>
           </div>

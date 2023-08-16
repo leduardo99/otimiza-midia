@@ -1,114 +1,85 @@
+import Image from 'next/image'
+
+const TESTIMONIALS = [
+  {
+    grid: [
+      {
+        id: 1,
+        name: 'Elite Auto Center',
+        type: 'Oficina Mecânica e Loja de Pneus',
+        avatar: 'avatar.jpeg',
+        text: 'A melhor decisão que tomei foi investir na internet para divulgar minha empresa, e com a ajuda da OtimizaMedia isso se tornou realidade. Trabalharam muito bem gerenciando e potencializando minha página do Google, Redes Sociais e nosso Site. Muitos clientes clientes apareceram depois disso, aprendi que a internet é a maior vitrine do mundo e nela que quero mostrar minha empresa.',
+      },
+      {
+        id: 3,
+        name: 'Eduardo Moura',
+        type: 'Odontologia',
+        avatar: 'avatar.jpeg',
+        text: 'An audire commodo habemus cum. Ne sed corrumpit repudiandae.',
+      },
+    ],
+  },
+  {
+    grid: [
+      {
+        id: 2,
+        name: 'Vazzier',
+        type: 'Loja de Joias',
+        avatar: 'avatar.jpeg',
+        text: 'Perdi muito tempo e dinheiro investindo de forma errada ao anunciar minha loja, diversos tipos de anúncios, mas pouco retorno. Foi aí que entrei em contato com a OtimizaMedia e com os serviços propostos, de trafego pago, meus anúncios bombaram e hoje posso viver somente da minha loja.',
+      },
+      {
+        id: 4,
+        name: 'CT Minha Praia',
+        type: 'Centro Esportivo',
+        avatar: 'avatar.jpeg',
+        text: 'Tenho muito a agradecer pelo trabalho da OtimizaMedia, vivia sem tempo para poder dar a devida atenção às minhas Redes Sociais, por isso os contatei e acabei descobrindo também a importância de ter um site e uma página do google atrativa, confiei no trabalho deles e não me arrependo.',
+      },
+    ],
+  },
+]
+
 export default function Testimonials() {
   return (
-    <section className="text-gray-800">
-      <div className="container px-6 py-12 mx-auto">
+    <section className="flex w-full flex-col items-center justify-center">
+      <div className="container mt-4 mx-auto">
         <div className="grid items-center gap-4 xl:grid-cols-5">
           <div className="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left">
-            <h2 className="text-4xl font-bold">
-              O que nossos clientes estão dizendo
+            <h2 className="text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl">
+              O que nossos clientes estão dizendo?
             </h2>
-            <p className="text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              at ipsum eu nunc commodo posuere et sit amet ligula.
+            <p className="text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl">
+              Sempre pedimos o feedback do cliente, fornecendo o melhor
+              atendimento pós-venda e suprindo as futuras necessidades.
             </p>
           </div>
           <div className="p-6 xl:col-span-3">
             <div className="grid gap-4 md:grid-cols-2">
-              <div className="grid content-center gap-4">
-                <div className="p-6 rounded shadow-md bg-slate-300">
-                  <p>
-                    An audire commodo habemus cum. Ne sed corrumpit repudiandae.
-                    Tota aliquip democritum pro in, nec democritum intellegam
-                    ne. Propriae volutpat dissentiet ea sit, nec at lorem inani
-                    tritani, an ius populo perfecto vituperatoribus. Eu cum case
-                    modus salutandi, ut eum vocent sensibus reprehendunt.
-                  </p>
-                  <div className="flex items-center mt-4 space-x-4">
-                    <img
-                      src="https://source.unsplash.com/50x50/?portrait?1"
-                      alt=""
-                      className="w-12 h-12 bg-center bg-cover rounded-full bg-gray-500"
-                    />
-                    <div>
-                      <p className="text-lg font-semibold">Leroy Jenkins</p>
-                      <p className="text-sm text-slate-600">
-                        CTO of Company Co.
-                      </p>
+              {TESTIMONIALS.map(({ grid }, key) => (
+                <div key={key.toString()} className="grid content-center gap-4">
+                  {grid.map(({ id, name, type, avatar, text }) => (
+                    <div
+                      key={id.toString()}
+                      className="p-6 rounded shadow-md bg-slate-300"
+                    >
+                      <p>{text}</p>
+                      <div className="flex items-center mt-4 space-x-4">
+                        <Image
+                          src={`/assets/images/${avatar}`}
+                          alt={name}
+                          className="bg-center bg-cover rounded-full bg-gray-500"
+                          width={48}
+                          height={48}
+                        />
+                        <div>
+                          <p className="text-lg font-semibold">{name}</p>
+                          <p className="text-sm text-slate-600">{type}</p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  ))}
                 </div>
-                <div className="p-6 rounded shadow-md bg-slate-300">
-                  <p>
-                    Sit wisi sapientem ut, pri civibus temporibus voluptatibus
-                    et, ius cu hinc fabulas. Nam meliore minimum et, regione
-                    convenire cum id. Ex pro eros mucius consectetuer, pro magna
-                    nulla nonumy ne, eam putent iudicabit consulatu cu.
-                  </p>
-                  <div className="flex items-center mt-4 space-x-4">
-                    <img
-                      src="https://source.unsplash.com/50x50/?portrait?2"
-                      alt=""
-                      className="w-12 h-12 bg-center bg-cover rounded-full bg-gray-500"
-                    />
-                    <div>
-                      <p className="text-lg font-semibold">Leroy Jenkins</p>
-                      <p className="text-sm text-slate-600">
-                        CTO of Company Co.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="grid content-center gap-4">
-                <div className="p-6 rounded shadow-md bg-slate-300">
-                  <p>
-                    Putant omnium elaboraret per ut. Id dicta tritani nominavi
-                    quo, mea id justo errem elaboraret. Agam mollis scripserit
-                    ea his, ut nec postea verear persecuti. Ea noster senserit
-                    eam, ferri omittantur ei nec. Id mel solet libris
-                    efficiantur, commune explicari et eos. Case movet ad est,
-                    sed tota vocent appetere ea.
-                  </p>
-                  <div className="flex items-center mt-4 space-x-4">
-                    <img
-                      src="https://source.unsplash.com/50x50/?portrait?3"
-                      alt=""
-                      className="w-12 h-12 bg-center bg-cover rounded-full bg-gray-500"
-                    />
-                    <div>
-                      <p className="text-lg font-semibold">Leroy Jenkins</p>
-                      <p className="text-sm text-slate-600">
-                        CTO of Company Co.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="p-6 rounded shadow-md bg-slate-300">
-                  <p>
-                    Te omnes virtute volutpat sed. Ei esse eros interesset vel,
-                    ei populo denique ocurreret vix, eu cum pertinax mandamus
-                    vituperatoribus. Solum nihil luptatum per ex, ei amet
-                    viderer eos. Ea illum labitur mnesarchum pro. Eius meis
-                    salutandi ei nam, alterum expetenda et nec. Expetenda
-                    intellegat at eum, per mazim sanctus honestatis ad. Ei
-                    noluisse invenire vix. Te ancillae patrioque qui, probo
-                    bonorum vivendum ex vim.
-                  </p>
-                  <div className="flex items-center mt-4 space-x-4">
-                    <img
-                      src="https://source.unsplash.com/50x50/?portrait?4"
-                      alt=""
-                      className="w-12 h-12 bg-center bg-cover rounded-full bg-gray-500"
-                    />
-                    <div>
-                      <p className="text-lg font-semibold">Leroy Jenkins</p>
-                      <p className="text-sm text-slate-600">
-                        CTO of Company Co.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

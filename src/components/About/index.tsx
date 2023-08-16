@@ -11,24 +11,30 @@ export default function About() {
   const ITEMS = [
     {
       icon: MdMood,
-      title: 'Understand your customers',
-      description: 'Then explain the first point breifly in one or two lines.',
+      title: 'Suporte dedicado ao cliente',
+      description:
+        'O cliente tem total acesso à equipe responsável ao serviço do começo ao fim.',
     },
     {
       icon: MdAnalytics,
-      title: 'Improve acquisition',
-      description: 'Here you can add the next benefit point.',
+      title: 'Potencializamos seus resultados',
+      description:
+        'Nossos serviços trazem mais acesso do consumidor para seu negócio e você acompanha tudo isso pelas estatísticas.',
     },
     {
       icon: MdAdsClick,
-      title: 'Drive customer retention',
-      description: 'This will be your last bullet point in this section.',
+      title: 'Trablhamos ao seu gosto',
+      description:
+        'Seu site, design, página e anúncios serão criados a partir das suas ideias e desejos, dando a sua cara no projeto.',
     },
   ]
 
   return (
     <>
-      <section className="flex w-full flex-col mt-4 items-center justify-center text-center">
+      <section
+        id="about"
+        className="flex w-full flex-col mt-14 items-center justify-center text-center"
+      >
         <h2 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl">
           Quem é a{' '}
           <Text>
@@ -64,10 +70,10 @@ export default function About() {
                 </h3>
 
                 <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl">
-                  You can use this space to highlight your first benefit or a
-                  feature of your product. It can also contain an image or
-                  Illustration like in the example along with some bullet
-                  points.
+                  Nós da OtimizaMedia contamos com uma equipe competente e
+                  completa que está disposta a fornecer todos os tipos de
+                  serviços que abrangem o Marketing Digital, assim nunca
+                  deixando o cliente na mão.
                 </p>
               </div>
 

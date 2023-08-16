@@ -3,9 +3,5 @@ export default function DefaultLayout({
 }: {
   children: React.ReactNode
 }) {
-  return (
-    <>
-      <main className="grow">{children}</main>
-    </>
-  )
+  return <main className="grow">{children}</main>
 }
