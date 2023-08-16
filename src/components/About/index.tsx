@@ -57,7 +57,6 @@ export default function About() {
                 width="521"
                 height="521"
                 alt="Benefits"
-                objectFit="cover"
               />
             </div>
           </div>
@@ -66,7 +65,7 @@ export default function About() {
             <div>
               <div className="flex flex-col w-full mt-4">
                 <h3 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl">
-                  Porque nos escolher?
+                  Por que nos escolher?
                 </h3>
 
                 <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl">

@@ -47,7 +47,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="/signin"
+                  href="#services"
                   className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   Serviços
@@ -55,15 +55,15 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="/signin"
+                  href="#testimonials"
                   className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
-                  Contato
+                  Clientes
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/signup"
+                  href="#"
                   className="px-4 py-2 bg-primary-2 text-white rounded-md flex items-center justify-center gap-2 transition-colors duration-200"
                 >
                   <span>Vamos Começar</span>

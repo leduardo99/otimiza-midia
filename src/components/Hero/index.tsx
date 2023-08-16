@@ -5,7 +5,7 @@ import { MdWhatsapp } from 'react-icons/md'
 
 export default function Hero() {
   return (
-    <section className="flex flex-wrap">
+    <section id="hero" className="flex flex-wrap mt-8">
       <div className="flex items-center w-full lg:w-1/2 relative">
         <div className="absolute -top-14 -left-10 z-[-1] w-1/2 h-full rounded-3xl hidden md:block">
           <Image
@@ -31,7 +31,9 @@ export default function Hero() {
 
           <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
             <a
-              href="https://web3templates.com/templates/nextly-landing-page-template-for-startups"
+              href={`https://wa.me/${
+                process.env.WHATSAPP_NUMBER
+              }?text=${encodeURI(process.env.WHATSAPP_MESSAGE)}`}
               target="_blank"
               rel="noopener"
               className="flex items-center justify-center gap-1 px-8 py-4 text-lg font-medium text-center text-white bg-primary-2 rounded-md"
@@ -53,7 +55,6 @@ export default function Hero() {
           height="300"
           alt="Hero Illustration"
           loading="eager"
-          objectFit="cover"
         />
       </div>
     </section>

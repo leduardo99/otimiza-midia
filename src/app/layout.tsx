@@ -14,6 +14,21 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  title: 'OtimizaMedia | Otimizamos o seu negócio',
+  description:
+    'Somos uma empresa de marketing digital focada em ajudar pequenas e médias empresas a crescerem através da internet.',
+  category: 'marketing',
+  creator: 'OtimizaMedia',
+  keywords: ['otimizamedia', 'otimiza', 'media', 'marketing', 'digital'],
+  openGraph: {
+    type: 'website',
+    description:
+      'Somos uma empresa de marketing digital focada em ajudar pequenas e médias empresas a crescerem através da internet.',
+    locale: 'pt_BR',
+    siteName: 'OtimizaMedia',
+    url: 'https://otimizamedia.com.br',
+    title: 'OtimizaMedia | Otimizamos o seu negócio',
+  },
   icons: [
     {
       rel: 'apple-touch-icon',
@@ -46,7 +61,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`${inter.variable} font-inter antialiased bg-white text-gray-900 tracking-tight`}
       >

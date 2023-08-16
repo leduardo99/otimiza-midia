@@ -7,15 +7,15 @@ const TESTIMONIALS = [
         id: 1,
         name: 'Elite Auto Center',
         type: 'Oficina Mecânica e Loja de Pneus',
-        avatar: 'avatar.jpeg',
+        avatar: 'elite.png',
         text: 'A melhor decisão que tomei foi investir na internet para divulgar minha empresa, e com a ajuda da OtimizaMedia isso se tornou realidade. Trabalharam muito bem gerenciando e potencializando minha página do Google, Redes Sociais e nosso Site. Muitos clientes clientes apareceram depois disso, aprendi que a internet é a maior vitrine do mundo e nela que quero mostrar minha empresa.',
       },
       {
         id: 3,
         name: 'Eduardo Moura',
         type: 'Odontologia',
-        avatar: 'avatar.jpeg',
-        text: 'An audire commodo habemus cum. Ne sed corrumpit repudiandae.',
+        avatar: 'eduardo.png',
+        text: 'Nunca dei atenção em divulgar meu trabalho na internet, que bom que os representantes da OtimizaMedia vieram até mim e mostraram como isso era importante para conseguir mais clientes. Depois criaram para mim uma página no Google dos meus serviços e clínica, o fluxo de pessoas entrando em contato comigo para agendar uma consulta aumentou muito.',
       },
     ],
   },
@@ -25,14 +25,14 @@ const TESTIMONIALS = [
         id: 2,
         name: 'Vazzier',
         type: 'Loja de Joias',
-        avatar: 'avatar.jpeg',
+        avatar: 'vazzier.png',
         text: 'Perdi muito tempo e dinheiro investindo de forma errada ao anunciar minha loja, diversos tipos de anúncios, mas pouco retorno. Foi aí que entrei em contato com a OtimizaMedia e com os serviços propostos, de trafego pago, meus anúncios bombaram e hoje posso viver somente da minha loja.',
       },
       {
         id: 4,
         name: 'CT Minha Praia',
         type: 'Centro Esportivo',
-        avatar: 'avatar.jpeg',
+        avatar: 'ct.png',
         text: 'Tenho muito a agradecer pelo trabalho da OtimizaMedia, vivia sem tempo para poder dar a devida atenção às minhas Redes Sociais, por isso os contatei e acabei descobrindo também a importância de ter um site e uma página do google atrativa, confiei no trabalho deles e não me arrependo.',
       },
     ],
@@ -41,7 +41,10 @@ const TESTIMONIALS = [
 
 export default function Testimonials() {
   return (
-    <section className="flex w-full flex-col items-center justify-center">
+    <section
+      id="testimonials"
+      className="flex w-full flex-col items-center justify-center"
+    >
       <div className="container mt-4 mx-auto">
         <div className="grid items-center gap-4 xl:grid-cols-5">
           <div className="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left">
@@ -65,9 +68,9 @@ export default function Testimonials() {
                       <p>{text}</p>
                       <div className="flex items-center mt-4 space-x-4">
                         <Image
-                          src={`/assets/images/${avatar}`}
+                          src={`/assets/clients/${avatar}`}
                           alt={name}
-                          className="bg-center bg-cover rounded-full bg-gray-500"
+                          className="bg-center bg-cover rounded-full"
                           width={48}
                           height={48}
                         />

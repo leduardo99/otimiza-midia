@@ -1,5 +1,24 @@
 import Image from 'next/image'
 
+function Icon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      className="w-7 h-7"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M5 13l4 4L19 7"
+      ></path>
+    </svg>
+  )
+}
+
 export default function Services() {
   return (
     <section
@@ -30,20 +49,7 @@ export default function Services() {
               <div className="flex">
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center w-12 h-12 rounded-md bg-primary-2 text-white">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      className="w-7 h-7"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M5 13l4 4L19 7"
-                      ></path>
-                    </svg>
+                    <Icon />
                   </div>
                 </div>
                 <div className="ml-4">
@@ -51,39 +57,24 @@ export default function Services() {
                     E-commerce
                   </h4>
                   <p className="mt-2 text-gray-600">
-                    Ex usu illum iudico molestie. Pro ne agam facete
-                    mediocritatem, ridens labore facete mea ei. Pro id apeirian
-                    dignissim.
+                    Que tal expandir o alcance do seu negócio a nível nacional?
+                    Criamos sua loja online de forma completa.
                   </p>
                 </div>
               </div>
               <div className="flex">
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center w-12 h-12 rounded-md bg-primary-2 text-white">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      className="w-7 h-7"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M5 13l4 4L19 7"
-                      ></path>
-                    </svg>
+                    <Icon />
                   </div>
                 </div>
                 <div className="ml-4">
                   <h4 className="text-lg font-medium leadi text-gray-800">
-                    Landing Pages
+                    Websites
                   </h4>
                   <p className="mt-2 text-gray-600">
-                    Amet utinam aliquando ut mea, malis admodum ocurreret nec
-                    et, elit tibique cu nec. Nec ex maluisset inciderint, ex
-                    quis.
+                    Construímos o seu site com a cara da sua empresa, da forma
+                    mais atrativa e completa do mercado.
                   </p>
                 </div>
               </div>
@@ -106,98 +97,63 @@ export default function Services() {
                 Marketing Digital
               </h3>
               <p className="mt-3 text-lg text-gray-600">
-                Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te
-                latine theophrastus. Ea his tale nibh dissentias, mei exerci
-                tamquam euripidis cu.
+                Através de estratégias de Marketing Digital podemos aumentar o
+                seu alcance e a sua visibilidade na internet.
               </p>
               <div className="mt-12 space-y-12">
                 <div className="flex">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center w-12 h-12 rounded-md bg-primary-2 text-white">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        className="w-7 h-7"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M5 13l4 4L19 7"
-                        ></path>
-                      </svg>
+                      <Icon />
                     </div>
                   </div>
                   <div className="ml-4">
                     <h4 className="text-lg font-medium leadi text-gray-800">
-                      Copywriting
+                      Social Media
                     </h4>
                     <p className="mt-2 text-gray-600">
-                      Processo de produção de textos persuasivos para ações de
-                      Marketing e Vendas, como o conteúdo de emails, sites,
-                      catálogos, anúncios e cartas de vendas, por exemplo.
+                      Gerenciamos suas redes sociais, mantendo elas diariamente
+                      ativas e sempre postando novidades, interagindo com os
+                      clientes e mantendo atualizações em dia.
                     </p>
                   </div>
                 </div>
                 <div className="flex">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center w-12 h-12 rounded-md bg-primary-2 text-white">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        className="w-7 h-7"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M5 13l4 4L19 7"
-                        ></path>
-                      </svg>
+                      <Icon />
                     </div>
                   </div>
                   <div className="ml-4">
                     <h4 className="text-lg font-medium leadi text-gray-800">
-                      Geomarketing
+                      SEO & Trafégo Pago
                     </h4>
                     <p className="mt-2 text-gray-600">
-                      Te per quidam maiorum ocurreret, etiam delicatissimi usu
-                      ad. Ne has quod periculis. Te sit primis iisque
-                      efficiantur.
+                      Nós pontecializamos o melhoramos a divulgação de suas
+                      redes, páginas e anúncios atráves do{' '}
+                      <strong className="text-primary-2">
+                        Google Meu Negócio,
+                      </strong>{' '}
+                      <strong className="text-primary-2">Google Ads,</strong>{' '}
+                      <strong className="text-primary-2">Facebook Ads</strong>
                     </p>
                   </div>
                 </div>
                 <div className="flex">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center w-12 h-12 rounded-md bg-primary-2 text-white">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        className="w-7 h-7"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M5 13l4 4L19 7"
-                        ></path>
-                      </svg>
+                      <Icon />
                     </div>
                   </div>
                   <div className="ml-4">
                     <h4 className="text-lg font-medium leadi text-gray-800">
-                      Impulsionamento das redes sociais
+                      Design e Ensaios Fotográficos
                     </h4>
                     <p className="mt-2 text-gray-600">
-                      Audire principes rationibus eam an, autem nominavi
-                      luptatum per te. Sumo fabulas vim eu, sonet saperet
-                      eleifend ut vix.
+                      Criamos todos os tipos de{' '}
+                      <strong className="text-primary-2">Artes Digitais</strong>
+                      , desde logos, layouts, banners e muito mais. Além de
+                      ensaios fotográficos para o seu negócio.
                     </p>
                   </div>
                 </div>
