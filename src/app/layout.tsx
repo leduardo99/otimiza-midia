@@ -20,7 +20,18 @@ export const metadata: Metadata = {
     'Somos uma empresa de marketing digital focada em ajudar pequenas e médias empresas a crescerem através da internet.',
   category: 'marketing',
   creator: 'OtimizaMedia',
-  keywords: ['otimizamedia', 'otimiza', 'media', 'marketing', 'digital'],
+  keywords: [
+    'otimizamedia',
+    'otimiza',
+    'media',
+    'marketing',
+    'digital',
+    'seo',
+    'Desenvolvimento de sites',
+    'Mídias sociais',
+    'Analytics',
+    'E-commerce',
+  ],
   openGraph: {
     type: 'website',
     description:
@@ -83,7 +94,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="pt_BR" className="scroll-smooth">
       <body
         className={`${inter.variable} font-inter antialiased bg-white text-gray-900 tracking-tight`}
       >
