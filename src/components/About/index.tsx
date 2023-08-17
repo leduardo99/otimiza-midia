@@ -42,7 +42,7 @@ export default function About() {
           </Text>
         </h2>
 
-        <p className="max-w-2xl py-6 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl">
+        <p className="max-w-2xl py-6 text-lg leading-normal text-gray-600 lg:text-xl xl:text-xl">
           Somos uma empresa de marketing digital focada em ajudar pequenas e
           médias empresas a crescerem através da internet.
         </p>
@@ -68,7 +68,7 @@ export default function About() {
                   Por que nos escolher?
                 </h3>
 
-                <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl">
+                <p className="max-w-2xl py-4 text-lg leading-normal text-gray-600 lg:text-xl xl:text-xl">
                   Nós da OtimizaMedia contamos com uma equipe competente e
                   completa que está disposta a fornecer todos os tipos de
                   serviços que abrangem o Marketing Digital, assim nunca
@@ -89,7 +89,7 @@ export default function About() {
                       <h4 className="text-xl font-medium text-gray-800">
                         {title}
                       </h4>
-                      <p className="mt-1 text-gray-500">{description}</p>
+                      <p className="mt-1 text-gray-600">{description}</p>
                     </div>
                   </div>
                 ))}

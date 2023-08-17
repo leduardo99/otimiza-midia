@@ -30,7 +30,7 @@ export default function Services() {
           <h2 className="text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl">
             Nossos serviços
           </h2>
-          <p className="text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl">
+          <p className="text-lg leading-normal text-gray-600 lg:text-xl xl:text-xl">
             Trabalhamos em todos os seguimentos do Marketing Digital, desde o
             desenvolvimento de sites até o impulsionamento das redes sociais.
           </p>

@@ -51,7 +51,7 @@ export default function Testimonials() {
             <h2 className="text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl">
               O que nossos clientes estão dizendo?
             </h2>
-            <p className="text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl">
+            <p className="text-lg leading-normal text-gray-600 lg:text-xl xl:text-xl">
               Sempre pedimos o feedback do cliente, fornecendo o melhor
               atendimento pós-venda e suprindo as futuras necessidades.
             </p>
