@@ -23,7 +23,7 @@ export default function About() {
     },
     {
       icon: MdAdsClick,
-      title: 'Trablhamos ao seu gosto',
+      title: 'Trabalhamos ao seu gosto',
       description:
         'Seu site, design, página e anúncios serão criados a partir das suas ideias e desejos, dando a sua cara no projeto.',
     },
