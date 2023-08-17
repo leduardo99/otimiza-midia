@@ -8,7 +8,7 @@ const TESTIMONIALS = [
         name: 'Elite Auto Center',
         type: 'Oficina Mecânica e Loja de Pneus',
         avatar: 'elite.png',
-        text: 'A melhor decisão que tomei foi investir na internet para divulgar minha empresa, e com a ajuda da OtimizaMedia isso se tornou realidade. Trabalharam muito bem gerenciando e potencializando minha página do Google, Redes Sociais e nosso Site. Muitos clientes clientes apareceram depois disso, aprendi que a internet é a maior vitrine do mundo e nela que quero mostrar minha empresa.',
+        text: 'A melhor decisão que tomei foi investir na internet para divulgar minha empresa, e com a ajuda da OtimizaMedia isso se tornou realidade. Trabalharam muito bem gerenciando e potencializando minha página do Google, Redes Sociais e nosso Site. Muitos clientes apareceram depois disso, aprendi que a internet é a maior vitrine do mundo e nela que quero mostrar minha empresa.',
       },
       {
         id: 3,

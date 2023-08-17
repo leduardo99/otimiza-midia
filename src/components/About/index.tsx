@@ -43,8 +43,8 @@ export default function About() {
         </h2>
 
         <p className="max-w-2xl py-6 text-lg leading-normal text-gray-600 lg:text-xl xl:text-xl">
-          Somos uma empresa de marketing digital focada em ajudar pequenas e
-          médias empresas a crescerem através da internet.
+          Somos uma empresa de marketing digital focada em ajudar empresas a
+          crescerem através da internet.
         </p>
       </section>
 
