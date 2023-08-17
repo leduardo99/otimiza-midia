@@ -30,6 +30,27 @@ export const metadata: Metadata = {
     url: 'https://otimizamedia.com.br',
     title: 'OtimizaMedia | Otimizamos o seu negócio',
   },
+  twitter: {
+    creator: '@otimizamedia',
+    site: 'https://otimizamedia.com.br',
+    title: 'OtimizaMedia | Otimizamos o seu negócio',
+    description:
+      'Somos uma empresa de marketing digital focada em ajudar pequenas e médias empresas a crescerem através da internet.',
+  },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+  },
+  authors: [
+    {
+      name: 'OtimizaMedia',
+      url: 'https://www.instagram.com/otimiza.media',
+    },
+    {
+      name: 'Luis Eduardo',
+      url: 'https://www.linkedin.com/in/leduardo99',
+    },
+  ],
   icons: [
     {
       rel: 'apple-touch-icon',
