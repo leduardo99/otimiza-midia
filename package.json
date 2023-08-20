@@ -38,7 +38,8 @@
     "react-icons": "^4.10.1",
     "sanity": "^3.0.0",
     "styled-breakpoints": "^12.1.5",
-    "styled-components": "^5.2.0",
+    "styled-components": "^6.0.0",
+    "stylis": "^4.0.0",
     "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {
@@ -52,7 +53,6 @@
     "@types/node": "^20.5.0",
     "@types/nodemailer": "^6.4.9",
     "@types/react": "^18.2.18",
-    "@types/styled-components": "^5.1.0",
     "@typescript-eslint/eslint-plugin": "^6.2.1",
     "@typescript-eslint/parser": "^6.2.1",
     "autoprefixer": "^10.4.14",
