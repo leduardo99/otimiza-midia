@@ -4,6 +4,12 @@
 
 @tailwind utilities;
 
+@layer base {
+  ol {
+    /* list-style: decimal; */
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

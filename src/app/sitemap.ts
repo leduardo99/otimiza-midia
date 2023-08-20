@@ -7,15 +7,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: 'https://otimizamedia.com.br/#about',
+      url: 'https://otimizamedia.com.br/legal/privacy',
       lastModified: new Date(),
     },
     {
-      url: 'https://otimizamedia.com.br/#testimonials',
-      lastModified: new Date(),
-    },
-    {
-      url: 'https://otimizamedia.com.br/#services',
+      url: 'https://otimizamedia.com.br/legal/terms',
       lastModified: new Date(),
     },
   ]

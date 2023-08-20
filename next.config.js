@@ -17,5 +17,6 @@ module.exports = withBundleAnalyzer({
   reactStrictMode: true,
   images: {
     disableStaticImages: true,
+    domains: ['cdn.sanity.io'],
   },
 })

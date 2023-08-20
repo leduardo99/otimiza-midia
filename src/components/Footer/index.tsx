@@ -34,7 +34,7 @@ export default function Footer() {
             <span className="text-sm font-bold">
               OtimizaMedia &copy; 2023 • Todos os direitos reservados
             </span>
-            <Link href="/legal/policy">
+            <Link href="/legal/privacy">
               <span className="text-sm font-bold">Políticas de Uso</span>
             </Link>
             <Link href="/legal/terms">

@@ -17,7 +17,7 @@
     "noUnusedParameters": true,
     "allowUnreachableCode": false,
     "noFallthroughCasesInSwitch": true,
-    "target": "es5",
+    "target": "ES2017",
     "outDir": "out",
     "declaration": true,
     "sourceMap": true,
@@ -33,7 +33,8 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@/public/*": ["./public/*"]
+      "@/public/*": ["./public/*"],
+      "@/sanity/*": ["./sanity/*"]
     },
     "plugins": [
       {

@@ -39,7 +39,7 @@ export default function Header() {
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
                 <Link
-                  href="#about"
+                  href="/#about"
                   className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   Sobre Nós
@@ -47,7 +47,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="#services"
+                  href="/#services"
                   className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   Serviços
@@ -55,7 +55,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="#testimonials"
+                  href="/#testimonials"
                   className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   Clientes
@@ -63,7 +63,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/"
                   className="px-4 py-2 bg-primary-2 text-white rounded-md flex items-center justify-center gap-2 transition-colors duration-200"
                 >
                   <span>Vamos Começar</span>

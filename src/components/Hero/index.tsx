@@ -1,5 +1,3 @@
-'use client'
-
 import Image from 'next/image'
 import { MdWhatsapp } from 'react-icons/md'
 
@@ -32,8 +30,8 @@ export default function Hero() {
           <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
             <a
               href={`https://wa.me/${
-                process.env.WHATSAPP_NUMBER
-              }?text=${encodeURI(process.env.WHATSAPP_MESSAGE)}`}
+                process.env.NEXT_PUBLIC_WHATSAPP_NUMBER
+              }?text=${encodeURI(process.env.NEXT_PUBLIC_WHATSAPP_MESSAGE)}`}
               target="_blank"
               rel="noopener"
               className="flex items-center justify-center gap-1 px-8 py-4 text-lg font-medium text-center text-white bg-primary-2 rounded-md"

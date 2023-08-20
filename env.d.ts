@@ -1,6 +1,6 @@
 namespace NodeJS {
   interface ProcessEnv {
-    WHATSAPP_NUMBER: string
-    WHATSAPP_MESSAGE: string
+    NEXT_PUBLIC_WHATSAPP_NUMBER: string
+    NEXT_PUBLIC_WHATSAPP_MESSAGE: string
   }
 }

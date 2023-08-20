@@ -1,9 +1,16 @@
+import { Metadata } from 'next'
 import Image from 'next/image'
 
 import About from '@/components/About'
 import Hero from '@/components/Hero'
 import Services from '@/components/Services'
 import Testimonials from '@/components/Testimonials'
+
+export const metadata: Metadata = {
+  title: 'OtimizaMedia | Otimizamos o seu negócio',
+  description:
+    'Somos uma empresa de marketing digital focada em ajudar pequenas e médias empresas a crescerem através da internet.',
+}
 
 export default function Home() {
   return (

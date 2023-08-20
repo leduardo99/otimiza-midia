@@ -1,4 +1,4 @@
-import '../styles/global.css'
+import '../../styles/global.css'
 
 import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
@@ -6,6 +6,7 @@ import { Inter } from 'next/font/google'
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import ChatBotScript from '@/lib/chatbot'
 import StyledComponentsRegistry from '@/lib/registry'
 
 const inter = Inter({
@@ -15,9 +16,6 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'OtimizaMedia | Otimizamos o seu negócio',
-  description:
-    'Somos uma empresa de marketing digital focada em ajudar pequenas e médias empresas a crescerem através da internet.',
   category: 'marketing',
   creator: 'OtimizaMedia',
   keywords: [
@@ -96,16 +94,18 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="scroll-smooth">
       <body
+        suppressHydrationWarning
         className={`${inter.variable} font-inter antialiased bg-white text-gray-900 tracking-tight`}
       >
         <StyledComponentsRegistry>
           <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
             <Header />
-            {children}
+            <main className="grow">{children}</main>
             <Footer />
           </div>
         </StyledComponentsRegistry>
         <Analytics />
+        <ChatBotScript />
       </body>
     </html>
   )
